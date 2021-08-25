@@ -5,10 +5,16 @@ const app = express();
 
 // Connect Database
 connectDB();
+//Init Middleware
+app.use(
+  express.json({
+    extented: false,
+  })
+);
 app.get("/", (req, res) => res.send("Api is Running"));
 
 //Define Routes
-app.use('/api/users',require("./Routes/API/users"));
+app.use("/api/users", require("./Routes/API/users"));
 app.use("/api/auth", require("./Routes/API/auth"));
 app.use("/api/profile", require("./Routes/API/profile"));
 app.use("/api/post", require("./Routes/API/post"));
