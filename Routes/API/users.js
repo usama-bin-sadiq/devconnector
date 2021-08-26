@@ -8,7 +8,7 @@ const User = require("../../models/User");
 const config = require("config");
 // //@route    Get api/users
 // //@desc     Test Route
-// //@acces    Public / Private
+// //@acces    Public 
 // router.get('/',(req,res)=>res.send("user Route"));
 
 //@route    Get api/users
