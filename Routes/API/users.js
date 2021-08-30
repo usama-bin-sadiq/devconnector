@@ -13,7 +13,7 @@ const config = require("config");
 
 //@route    Get api/users
 //@desc     Register Route
-//@acces    Public / Private
+//@acces    Public 
 router.post(
   "/",
   [

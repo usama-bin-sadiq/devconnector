@@ -3,7 +3,7 @@ const router = express.Router();
 
 //@route    Get api/users
 //@desc     Test Route
-//@acces    Public / Private
+//@acces    Public
 router.get("/", (req, res) => res.send("Post Route"));
 
 module.exports = router;
